@@ -81,3 +81,19 @@ else:
     print("é não!")
 
 print("é o aluno", retornaValor("Artur"))
+
+#chamada da função com retorno direto no if
+if retornaValor("Francine") == True:
+    print("Correto")
+else:
+    print("Incorreto")
+
+#Recursividade: é recurso onde podemos chamar a função dentro dela mesma.
+def funcaoRecursiva(numero):
+    if numero > 0:
+        resultado = numero + funcaoRecursiva(numero - 1)
+    else:
+        resultado = 0
+    return resultado
+
+funcaoRecursiva(5)
